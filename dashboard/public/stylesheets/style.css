@@ -1,0 +1,28 @@
+body {
+	text-align: center;
+}
+
+h1.title {
+	text-align: left;
+}
+
+span.label {
+	margin: 20px;
+}
+
+div.ele {
+	margin: 20px;
+}
+
+div.ele span.label {
+	font-size: x-large;
+}
+
+div.submit {
+	margin: 40px;
+	text-align: right;
+}
+
+#restore-version {
+	margin-left: 40px;
+}

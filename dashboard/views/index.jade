@@ -1,0 +1,50 @@
+extends layout
+block content
+	h1.title
+		span.label.label-default #{title}
+	div.form
+		h2
+			span.label.label-primary Swift Configuration
+		div#swift-config
+			div.container
+				div.ele
+					span.label.label-info User name
+					input(value="", id="username", type="text", name="User", placeholder="Username")
+				div.ele
+					span.label.label-info Password
+					input(value="", id="password", type="password", name="Password")
+				div.ele
+					span.label.label-info Auth url
+					input(value="",id="authurl", type="text", name="Authurl")
+				div.ele
+					span.label.label-info Domain id
+					input(value="",id="domainid", type="text", placeholder="domain id")
+					span.label.label-info Domain name
+					input(value="",id="domain", type="text", placeholder="domain name")
+				div.ele
+					span.label.label-info Tenant id
+					input(value="",id="tenantid", type="text",name="")
+					span.label.label-info Tenant name
+					input(value="",id="tenant", type="text", placeholder="tenant name")
+				div.ele
+					span.label.label-info Region name
+					input(value="",id="region", type="text", placeholder="region name")
+				div.ele
+					span.label.label-info Container name
+					input(value="Hackathon_Demo",id="container", type="text", name="")
+				div.ele
+					span.label.label-info Insecure
+					input(id="insecure",type="checkbox",checked)
+				div.submit
+					a#save.btn.btn-info.btn-lg(href="#", role="button") Save your configuraition
+				div.submit
+					a#backup.btn.btn-info.btn-lg(href="#", role="button") Backup your configuration
+				div.submit
+					a#restore.btn.btn-info.btn-lg(href="#", role="button") Restore to Version
+					select#restore-version
+						option Version001
+						option Version002
+						option Version003
+block script
+	script
+		include index.js
